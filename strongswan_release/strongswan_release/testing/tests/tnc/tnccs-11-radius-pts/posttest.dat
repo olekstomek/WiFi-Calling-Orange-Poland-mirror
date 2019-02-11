@@ -1,0 +1,9 @@
+carol::service charon stop
+dave::service charon stop
+moon::service charon stop
+alice::killall radiusd
+alice::rm /etc/freeradius/sites-enabled/inner-tunnel-second
+carol::echo 1 > /proc/sys/net/ipv4/ip_forward
+moon::iptables-restore < /etc/iptables.flush
+carol::iptables-restore < /etc/iptables.flush
+dave::iptables-restore < /etc/iptables.flush

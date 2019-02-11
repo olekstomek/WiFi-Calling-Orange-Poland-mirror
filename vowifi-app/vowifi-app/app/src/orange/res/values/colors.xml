@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brandOrange">#FF7900</color>
+    <color name="brandBlue">#4BB4E6</color>
+
+    <color name="textNormal">@color/black</color>
+    <color name="textLight">#666666</color>
+    <color name="textLightInverted">#666666</color>
+    <color name="textInverted">#FFFFFF</color>
+    <color name="textInverted2">@color/black</color>
+    <color name="textInvertedCallersName">@color/brandOrange</color>
+    <color name="textAccented">@color/brandOrange</color>
+    <color name="textInvertedAccented">@color/textLightInverted</color>
+    <color name="textInvertedAccentedSpan">@color/brandOrange</color>
+
+    <color name="bgDefault">@color/white</color>
+    <color name="bgAccented">@color/black</color>
+    <color name="bgInvertedAccented">@color/brandOrange</color>
+    <color name="ntf_btn">@color/brandOrange</color>
+
+    <color name="colorPrimary">@color/black</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">@color/brandOrange</color>
+
+    <color name="swipeBackgroundBlue">#b9e2f1</color>
+    <color name="swipeBackgroundGreen">#bcded0</color>
+
+    <color name="bgSettingsHeader">@color/brandBlue</color>
+    <color name="iconTint">@color/black</color>
+    <!-- special text type that is accented only in nju -->
+    <color name="textImportant">@color/textNormal</color>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/misc_error_frame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    android:layout_marginTop="40dp">
+
+    <ImageView
+        android:id="@+id/misc_error_frame_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/misc_error_image"
+        android:tint="@color/black"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/misc_error_frame_message"
+        style="@style/VOWIFI.Text"
+        android:layout_toEndOf="@id/misc_error_frame_image"
+        android:text="@string/dbg_data2"
+        android:textStyle="bold"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontButton
+        android:id="@+id/misc_error_frame_button"
+        style="@style/VOWIFI.Button.Material"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/misc_error_frame_message"
+        android:layout_marginTop="60dp"
+        android:text="@string/misc_btn_try_again"/>
+</RelativeLayout>

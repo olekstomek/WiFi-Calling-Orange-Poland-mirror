@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pl.orangelabs.wificalling.ctrl.CustomFontTextView
+    android:id="@+id/activity_about_entry_tos"
+    style="@style/VOWIFI.Text"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:minHeight="64dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:text="@string/about_tos_button"/>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgAccented"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/activity_init_splash_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splash_image"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/activity_init_title"
+        style="@style/VOWIFI.Text.AppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_init_splash_image"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="0.7"
+        android:text="@string/app_name"
+        app:useHeaderFont="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:src="@drawable/splash_logo"/>
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--style="@style/VOWIFI.Toolbar"/>-->
+
+
+    <RelativeLayout
+        android:id="@+id/activity_init_bottom_frame"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bgDefault"
+        android:elevation="6dp">
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+            android:id="@+id/tv_tutorial"
+            style="@style/VOWIFI.Text.Init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_activation_init"
+            android:layout_marginLeft="@dimen/margin_activation_init"
+            android:layout_marginRight="@dimen/margin_activation_init"
+            android:layout_marginTop="60dp"
+            android:paddingTop="16dp"
+            android:text="@string/txt_activated"/>
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontButton
+            android:id="@+id/activity_init_btn_start"
+            style="@style/VOWIFI.Button.Framed"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_activation_init"
+            android:text="@string/activity_init_start_btn"/>
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontButton
+            android:id="@+id/activity_init_btn_tmp_test_activity"
+            style="@style/VOWIFI.Button.Framed"
+            android:layout_width="100dp"
+            android:layout_above="@+id/activity_init_btn_tm_pre_start_anim"
+            android:layout_alignParentEnd="true"
+            android:text="tmp test activity"
+            android:visibility="gone"
+            tools:ignore="HardcodedText"/>
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontButton
+            android:id="@+id/activity_init_btn_tm_pre_start_anim"
+            style="@style/VOWIFI.Button.Framed"
+            android:layout_width="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="tmp skip init"
+            android:visibility="gone"
+            tools:ignore="HardcodedText"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/vpn_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/sip_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/activity_init_app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:elevation="8dp"
+        android:src="@drawable/ic_app_logo"/>
+
+</RelativeLayout>

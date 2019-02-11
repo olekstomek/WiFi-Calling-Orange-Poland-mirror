@@ -1,0 +1,232 @@
+Nieużywane symbole terminalne w gramatyce
+
+   STRING_ERROR
+
+
+Gramatyka
+
+    0 $accept: statements $end
+
+    1 statements: %empty
+    2           | statements NEWLINE
+    3           | statements statement
+
+    4 statement: section
+    5          | SPACES setting
+
+    6 section: section_type section_name
+
+    7 section_type: CONFIG_SETUP
+    8             | CONN
+    9             | CA
+
+   10 section_name: %empty
+   11             | STRING
+
+   12 setting: %empty
+   13        | STRING EQ value
+   14        | STRING EQ
+   15        | STRING
+
+   16 value: STRING
+   17      | value STRING
+
+
+Symbole terminalne i reguły, w których występują
+
+$end (0) 0
+error (256)
+STRING (258) 11 13 14 15 16 17
+EQ (259) 13 14
+SPACES (260) 5
+NEWLINE (261) 2
+CONFIG_SETUP (262) 7
+CONN (263) 8
+CA (264) 9
+STRING_ERROR (265)
+
+
+Symbole nieterminalne i reguły, w których występują
+
+$accept (11)
+    po lewej: 0
+statements (12)
+    po lewej: 1 2 3, po prawej: 0 2 3
+statement (13)
+    po lewej: 4 5, po prawej: 3
+section (14)
+    po lewej: 6, po prawej: 4
+section_type (15)
+    po lewej: 7 8 9, po prawej: 6
+section_name (16)
+    po lewej: 10 11, po prawej: 6
+setting (17)
+    po lewej: 12 13 14 15, po prawej: 5
+value (18)
+    po lewej: 16 17, po prawej: 13 17
+
+
+Stan 0
+
+    0 $accept: . statements $end
+
+    $domyślnie  redukcja przy użyciu reguły 1 (statements)
+
+    statements  przejście do stanu 1
+
+
+Stan 1
+
+    0 $accept: statements . $end
+    2 statements: statements . NEWLINE
+    3           | statements . statement
+
+    $end          przesunięcie, i przejście do stanu 2
+    SPACES        przesunięcie, i przejście do stanu 3
+    NEWLINE       przesunięcie, i przejście do stanu 4
+    CONFIG_SETUP  przesunięcie, i przejście do stanu 5
+    CONN          przesunięcie, i przejście do stanu 6
+    CA            przesunięcie, i przejście do stanu 7
+
+    statement     przejście do stanu 8
+    section       przejście do stanu 9
+    section_type  przejście do stanu 10
+
+
+Stan 2
+
+    0 $accept: statements $end .
+
+    $domyślnie  akceptowanie
+
+
+Stan 3
+
+    5 statement: SPACES . setting
+
+    STRING  przesunięcie, i przejście do stanu 11
+
+    $domyślnie  redukcja przy użyciu reguły 12 (setting)
+
+    setting  przejście do stanu 12
+
+
+Stan 4
+
+    2 statements: statements NEWLINE .
+
+    $domyślnie  redukcja przy użyciu reguły 2 (statements)
+
+
+Stan 5
+
+    7 section_type: CONFIG_SETUP .
+
+    $domyślnie  redukcja przy użyciu reguły 7 (section_type)
+
+
+Stan 6
+
+    8 section_type: CONN .
+
+    $domyślnie  redukcja przy użyciu reguły 8 (section_type)
+
+
+Stan 7
+
+    9 section_type: CA .
+
+    $domyślnie  redukcja przy użyciu reguły 9 (section_type)
+
+
+Stan 8
+
+    3 statements: statements statement .
+
+    $domyślnie  redukcja przy użyciu reguły 3 (statements)
+
+
+Stan 9
+
+    4 statement: section .
+
+    $domyślnie  redukcja przy użyciu reguły 4 (statement)
+
+
+Stan 10
+
+    6 section: section_type . section_name
+
+    STRING  przesunięcie, i przejście do stanu 13
+
+    $domyślnie  redukcja przy użyciu reguły 10 (section_name)
+
+    section_name  przejście do stanu 14
+
+
+Stan 11
+
+   13 setting: STRING . EQ value
+   14        | STRING . EQ
+   15        | STRING .
+
+    EQ  przesunięcie, i przejście do stanu 15
+
+    $domyślnie  redukcja przy użyciu reguły 15 (setting)
+
+
+Stan 12
+
+    5 statement: SPACES setting .
+
+    $domyślnie  redukcja przy użyciu reguły 5 (statement)
+
+
+Stan 13
+
+   11 section_name: STRING .
+
+    $domyślnie  redukcja przy użyciu reguły 11 (section_name)
+
+
+Stan 14
+
+    6 section: section_type section_name .
+
+    $domyślnie  redukcja przy użyciu reguły 6 (section)
+
+
+Stan 15
+
+   13 setting: STRING EQ . value
+   14        | STRING EQ .
+
+    STRING  przesunięcie, i przejście do stanu 16
+
+    $domyślnie  redukcja przy użyciu reguły 14 (setting)
+
+    value  przejście do stanu 17
+
+
+Stan 16
+
+   16 value: STRING .
+
+    $domyślnie  redukcja przy użyciu reguły 16 (value)
+
+
+Stan 17
+
+   13 setting: STRING EQ value .
+   17 value: value . STRING
+
+    STRING  przesunięcie, i przejście do stanu 18
+
+    $domyślnie  redukcja przy użyciu reguły 13 (setting)
+
+
+Stan 18
+
+   17 value: value STRING .
+
+    $domyślnie  redukcja przy użyciu reguły 17 (value)

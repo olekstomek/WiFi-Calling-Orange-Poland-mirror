@@ -1,0 +1,27 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgAccented"
+    tools:context="pl.orangelabs.wificalling.view.activation_client.FragmentTutorial">
+
+    <ImageView
+        android:id="@+id/iv_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontButton
+        android:layout_gravity="bottom"
+        android:id="@+id/iv_tutorial_details"
+        style="@style/VOWIFI.Button.Framed.Inverted"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/tutorial_details"/>
+
+</FrameLayout>

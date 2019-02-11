@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="pl.orangelabs.wificalling">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/> <!-- for bluetooth crash -->
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LauncherActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activation_client.ActivityActivationInit"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".view.activation_client.ActivityActivationTutorial"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".view.activation_client.ActivityActivationSmsWaiter"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".view.ActivityInit"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".MainActivityTest"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.ActivityMain"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.ActivitySettings"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.ActivityAbout"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.ActivityContactDetails"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.ActivitySearch"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.ActivityPermissionsError"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.ActivityCall"
+            android:theme="@style/AppTheme.Wallpaper"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".view.ActivityIncomingCall"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Full"/>
+        <activity
+            android:name=".view.ActivityClear"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.Transparent"/>
+        <activity
+            android:name=".view.ActivityPermissions"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <service android:name=".VpnStateService"/>
+        <service
+            android:name="org.strongswan.android.logic.CharonVpnService"
+            android:exported="false"
+            android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.connection_service.ConnectionService"/>
+        <service android:name=".sip.SipService"/>
+        <service android:name=".service.activation_service.GCMRepeatAuthService"
+                 android:exported="true"
+                 android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.connection_service.GCMConnectionRepeatService"
+                 android:exported="true"
+                 android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".service.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.receiver.SmsReceiver"
+                  android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.receiver.BluetoothReceiver">
+            <intent-filter>
+
+                <!-- <action android:name="android.media.ACTION_SCO_AUDIO_STATE_UPDATED"/> audio headset start -->
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED"/>
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.receiver.SIMCardReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".service.receiver.CallReceiver" android:exported="true" android:enabled="true">
+            <intent-filter android:priority="100000">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="1276be2120b578af5b97ee483584922423020ddd"/>
+    </application>
+
+</manifest>

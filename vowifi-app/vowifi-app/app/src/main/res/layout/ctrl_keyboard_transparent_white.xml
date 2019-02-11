@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pl.orangelabs.wificalling.ctrl.OLPKeyboard xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 style="@style/VOWIFI.KeyboardWhite"
+                                                 android:background="@android:color/transparent"
+                                                 android:duplicateParentState="false">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.Space
+            android:id="@+id/ctrl_keyboard_left_spacing"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"/>
+
+
+        <pl.orangelabs.wificalling.ctrl.EditTextNoKeyboard
+            android:id="@+id/ctrl_keyboard_text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@id/ctrl_keyboard_backspace"
+            android:layout_toEndOf="@id/ctrl_keyboard_left_spacing"
+            android:background="@null"
+            android:gravity="center"
+            android:inputType="phone"
+            android:maxLength="200"
+            android:textColor="@color/keyboard_white_key_color"
+            android:textSize="30sp"/>
+
+
+        <ImageView
+            android:id="@+id/ctrl_keyboard_backspace"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:foregroundTint="@color/keyboard_white_key_color"
+            android:padding="16dp"
+            android:src="@drawable/ic_dialer_delete"
+            android:tint="@color/keyboard_white_key_color"
+            android:tintMode="src_over"
+            android:visibility="invisible"/>
+
+
+    </RelativeLayout>
+
+    <pl.orangelabs.wificalling.ctrl.OLPKeyboardRow style="@style/VOWIFI.KeyboardRow">
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText=""
+            app:kkMainText="1"/>
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText="ABC"
+            app:kkMainText="2"/>
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText="DEF"
+            app:kkMainText="3"/>
+    </pl.orangelabs.wificalling.ctrl.OLPKeyboardRow>
+
+    <pl.orangelabs.wificalling.ctrl.OLPKeyboardRow style="@style/VOWIFI.KeyboardRow">
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText="GHI"
+            app:kkMainText="4"/>
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText="JKL"
+            app:kkMainText="5"/>
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText="MNO"
+            app:kkMainText="6"/>
+    </pl.orangelabs.wificalling.ctrl.OLPKeyboardRow>
+
+    <pl.orangelabs.wificalling.ctrl.OLPKeyboardRow style="@style/VOWIFI.KeyboardRow">
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText="PQRS"
+            app:kkMainText="7"/>
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText="TUV"
+            app:kkMainText="8"/>
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText="WXYZ"
+            app:kkMainText="9"/>
+    </pl.orangelabs.wificalling.ctrl.OLPKeyboardRow>
+
+    <pl.orangelabs.wificalling.ctrl.OLPKeyboardRow style="@style/VOWIFI.KeyboardRow">
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText=""
+            app:kkMainText="*"/>
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText="+"
+            app:kkHandleLongpress="true"
+            app:kkMainText="0"/>
+
+        <pl.orangelabs.wificalling.ctrl.OLPKeyboardKey
+            style="@style/VOWIFI.KeyboardKeyWhite"
+            app:kkAdditionalText=""
+            app:kkMainText="#"/>
+    </pl.orangelabs.wificalling.ctrl.OLPKeyboardRow>
+
+
+</pl.orangelabs.wificalling.ctrl.OLPKeyboard>

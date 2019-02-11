@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_activation_sms_waiter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/main_margin_activation"
+    tools:context="pl.orangelabs.wificalling.view.activation_client.ActivityActivationSmsWaiter">
+    <ImageView
+        android:layout_width="@dimen/iv_logo_size"
+        android:layout_height="@dimen/iv_logo_size"
+        android:background="@drawable/ic_app_logo"
+        android:elevation="6dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        style="@style/VOWIFI.Text.Init"
+        android:text="@string/txt_activation_sms_waiting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activation_top_margin"
+        android:elevation="7dp"
+        android:id="@+id/tv_registration_in_progress"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:elevation="7dp"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progressBar3"
+        android:layout_marginTop="@dimen/activation_top_margin"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/textView8"
+        style="@style/VOWIFI.Text.Init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activation_top_margin"
+        android:elevation="7dp"
+        android:text="@string/txt_activation_sms_waiting_2"/>
+</LinearLayout>

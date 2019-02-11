@@ -1,0 +1,248 @@
+Nieużywane symbole terminalne w gramatyce
+
+   STRING_ERROR
+
+
+Stan 11 konflikty: 1 przesunięcie/redukcja
+Stan 16 konflikty: 1 przesunięcie/redukcja
+
+
+Gramatyka
+
+    0 $accept: statements $end
+
+    1 statements: %empty
+    2           | statements NEWLINE
+    3           | statements statement
+
+    4 statement: section
+    5          | setting
+
+    6 section: section_start statements '}'
+
+    7 section_start: NAME '{'
+    8              | NAME NEWLINE '{'
+
+    9 setting: NAME '=' value
+   10        | NAME '='
+
+   11 value: valuepart
+   12      | value valuepart
+
+   13 valuepart: NAME
+   14          | STRING
+
+
+Symbole terminalne i reguły, w których występują
+
+$end (0) 0
+'=' (61) 9 10
+'{' (123) 7 8
+'}' (125) 6
+error (256)
+NAME (258) 7 8 9 10 13
+STRING (259) 14
+NEWLINE (260) 2 8
+STRING_ERROR (261)
+
+
+Symbole nieterminalne i reguły, w których występują
+
+$accept (10)
+    po lewej: 0
+statements (11)
+    po lewej: 1 2 3, po prawej: 0 2 3 6
+statement (12)
+    po lewej: 4 5, po prawej: 3
+section (13)
+    po lewej: 6, po prawej: 4
+section_start (14)
+    po lewej: 7 8, po prawej: 6
+setting (15)
+    po lewej: 9 10, po prawej: 5
+value (16)
+    po lewej: 11 12, po prawej: 9 12
+valuepart (17)
+    po lewej: 13 14, po prawej: 11 12
+
+
+Stan 0
+
+    0 $accept: . statements $end
+
+    $domyślnie  redukcja przy użyciu reguły 1 (statements)
+
+    statements  przejście do stanu 1
+
+
+Stan 1
+
+    0 $accept: statements . $end
+    2 statements: statements . NEWLINE
+    3           | statements . statement
+
+    $end     przesunięcie, i przejście do stanu 2
+    NAME     przesunięcie, i przejście do stanu 3
+    NEWLINE  przesunięcie, i przejście do stanu 4
+
+    statement      przejście do stanu 5
+    section        przejście do stanu 6
+    section_start  przejście do stanu 7
+    setting        przejście do stanu 8
+
+
+Stan 2
+
+    0 $accept: statements $end .
+
+    $domyślnie  akceptowanie
+
+
+Stan 3
+
+    7 section_start: NAME . '{'
+    8              | NAME . NEWLINE '{'
+    9 setting: NAME . '=' value
+   10        | NAME . '='
+
+    NEWLINE  przesunięcie, i przejście do stanu 9
+    '{'      przesunięcie, i przejście do stanu 10
+    '='      przesunięcie, i przejście do stanu 11
+
+
+Stan 4
+
+    2 statements: statements NEWLINE .
+
+    $domyślnie  redukcja przy użyciu reguły 2 (statements)
+
+
+Stan 5
+
+    3 statements: statements statement .
+
+    $domyślnie  redukcja przy użyciu reguły 3 (statements)
+
+
+Stan 6
+
+    4 statement: section .
+
+    $domyślnie  redukcja przy użyciu reguły 4 (statement)
+
+
+Stan 7
+
+    6 section: section_start . statements '}'
+
+    $domyślnie  redukcja przy użyciu reguły 1 (statements)
+
+    statements  przejście do stanu 12
+
+
+Stan 8
+
+    5 statement: setting .
+
+    $domyślnie  redukcja przy użyciu reguły 5 (statement)
+
+
+Stan 9
+
+    8 section_start: NAME NEWLINE . '{'
+
+    '{'  przesunięcie, i przejście do stanu 13
+
+
+Stan 10
+
+    7 section_start: NAME '{' .
+
+    $domyślnie  redukcja przy użyciu reguły 7 (section_start)
+
+
+Stan 11
+
+    9 setting: NAME '=' . value
+   10        | NAME '=' .
+
+    NAME    przesunięcie, i przejście do stanu 14
+    STRING  przesunięcie, i przejście do stanu 15
+
+    NAME         [redukcja przy użyciu reguły 10 (setting)]
+    $domyślnie  redukcja przy użyciu reguły 10 (setting)
+
+    value      przejście do stanu 16
+    valuepart  przejście do stanu 17
+
+
+Stan 12
+
+    2 statements: statements . NEWLINE
+    3           | statements . statement
+    6 section: section_start statements . '}'
+
+    NAME     przesunięcie, i przejście do stanu 3
+    NEWLINE  przesunięcie, i przejście do stanu 4
+    '}'      przesunięcie, i przejście do stanu 18
+
+    statement      przejście do stanu 5
+    section        przejście do stanu 6
+    section_start  przejście do stanu 7
+    setting        przejście do stanu 8
+
+
+Stan 13
+
+    8 section_start: NAME NEWLINE '{' .
+
+    $domyślnie  redukcja przy użyciu reguły 8 (section_start)
+
+
+Stan 14
+
+   13 valuepart: NAME .
+
+    $domyślnie  redukcja przy użyciu reguły 13 (valuepart)
+
+
+Stan 15
+
+   14 valuepart: STRING .
+
+    $domyślnie  redukcja przy użyciu reguły 14 (valuepart)
+
+
+Stan 16
+
+    9 setting: NAME '=' value .
+   12 value: value . valuepart
+
+    NAME    przesunięcie, i przejście do stanu 14
+    STRING  przesunięcie, i przejście do stanu 15
+
+    NAME         [redukcja przy użyciu reguły 9 (setting)]
+    $domyślnie  redukcja przy użyciu reguły 9 (setting)
+
+    valuepart  przejście do stanu 19
+
+
+Stan 17
+
+   11 value: valuepart .
+
+    $domyślnie  redukcja przy użyciu reguły 11 (value)
+
+
+Stan 18
+
+    6 section: section_start statements '}' .
+
+    $domyślnie  redukcja przy użyciu reguły 6 (section)
+
+
+Stan 19
+
+   12 value: value valuepart .
+
+    $domyślnie  redukcja przy użyciu reguły 12 (value)

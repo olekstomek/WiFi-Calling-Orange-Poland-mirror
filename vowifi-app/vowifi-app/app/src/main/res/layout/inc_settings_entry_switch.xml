@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    style="@style/VOWIFI"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/selectableItemBackground"
+    android:minHeight="64dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/inc_settings_entry_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:src="@drawable/ic_book"
+        android:tint="@color/iconTint"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/inc_settings_entry_text"
+        style="@style/VOWIFI.Text"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/inc_settings_entry_icon"
+        android:text="@string/dbg_data2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/separator"/>
+</RelativeLayout>

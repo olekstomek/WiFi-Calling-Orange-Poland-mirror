@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/inc_toolbar"/>
+
+        <RelativeLayout
+            android:id="@+id/data_root"
+            style="@style/VOWIFI"
+            android:background="@color/bgSettingsHeader"
+            android:elevation="@dimen/appbar_elevation"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/activity_settings_disable_frame_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/misc_settings_image"/>
+
+            <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+                android:id="@+id/activity_settings_disable_frame_header"
+                style="@style/VOWIFI.Text.Header"
+                android:layout_toStartOf="@id/activity_settings_disable_frame_icon"
+                android:text="@string/activity_settings_change_pass_title"
+                app:useHeaderFont="true"/>
+
+            <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+                android:id="@+id/activity_settings_disable_frame_text"
+                style="@style/VOWIFI.Text"
+                android:layout_below="@id/activity_settings_disable_frame_header"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toStartOf="@id/activity_settings_disable_frame_icon"
+                android:text="@string/activity_settings_change_pass_info"/>
+
+            <pl.orangelabs.wificalling.ctrl.CustomFontButton
+                android:id="@+id/activity_settings_change_password"
+                android:layout_width="wrap_content"
+                style="@style/VOWIFI.Button.Framed"
+                android:textSize="10sp"
+                android:layout_marginEnd="12dp"
+                android:layout_below="@id/activity_settings_disable_frame_text"
+                android:layout_toStartOf="@id/activity_settings_disable_frame_icon"
+                android:text="@string/activity_settings_change_password"/>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/activity_settings_entry_divider_mode"
+            layout="@layout/inc_settings_entry_switch"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/activity_settings_entry_sorting_mode"
+            layout="@layout/inc_settings_entry_switch"/>
+
+        <include
+            android:id="@+id/activity_settings_entry_display_mode"
+            layout="@layout/inc_settings_entry_switch"/>
+
+        <include
+            android:id="@+id/activity_settings_entry_ringtone"
+            layout="@layout/inc_settings_entry_switch"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools">
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/ctrl_key_main"
+        style="@style/VOWIFI.KeyMain"
+        tools:text="3"
+        app:useHeaderFont="true"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/ctrl_key_additional"
+        style="@style/VOWIFI.KeyAdditional"
+        android:layout_below="@id/ctrl_key_main"
+        android:layout_marginTop="-5dp"
+        tools:text="ABC"
+        app:useHeaderFont="false"/>
+</merge>

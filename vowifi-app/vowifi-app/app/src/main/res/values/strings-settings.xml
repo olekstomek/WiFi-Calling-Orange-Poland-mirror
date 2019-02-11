@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vpn_name">VoWifiVPN</string>
+    <string name="vpn_identity">C=PL, L=Warsaw, O=Orange, CN=cpar-kal-tb</string>
+    <string name="relam">ims.mnc003.mcc260.3gppnetwork.org</string>
+    <string name="prodIP">172.18.97.7</string>
+    <string name="testIP">172.18.91.245</string>
+    <string name="domain">ims.mnc003.mcc260.3gppnetwork.org</string>
+    <string name="local_id_end">\@nai.epc.mnc003.mcc260.3gppnetwork.org</string>
+    <string name="local_id_begin">A</string>
+    <string name="user_name">username</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@color/bgAccented"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/animated_header_top"
+        style="@style/VOWIFI.Text.MainHeader"
+        android:text="@string/dbg_data1"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/animated_header_bottom"
+        style="@style/VOWIFI.Text.MainHeader.Bottom"
+        android:layout_below="@id/animated_header_top"
+        android:text="@string/dbg_data1"
+        app:useHeaderFont="true"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/animated_header_top_anim"
+        style="@style/VOWIFI.Text.MainHeader"
+        android:text="@string/dbg_data1"
+        android:visibility="invisible"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/animated_header_bottom_anim"
+        style="@style/VOWIFI.Text.MainHeader.Bottom"
+        android:layout_below="@id/animated_header_top_anim"
+        android:text="@string/dbg_data1"
+        android:visibility="invisible"
+        app:useHeaderFont="true"/>
+
+</RelativeLayout>

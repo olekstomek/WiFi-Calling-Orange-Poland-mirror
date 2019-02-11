@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/number_picker_title"
+        style="@style/VOWIFI.Text.Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/dialog_pick_number_title"
+        app:useHeaderFont="true"/>
+
+    <include layout="@layout/inc_separator" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/number_picker_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

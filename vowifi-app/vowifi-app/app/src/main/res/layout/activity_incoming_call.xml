@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/view_call_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/view_call_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_avatar_full"
+        android:transitionName="@string/transition_call_photo"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_call_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+            android:id="@+id/view_call_name"
+            style="@style/VOWIFI.Text.Header.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/textInvertedCallersName"
+            android:transitionName="@string/transition_call_name"
+            app:useHeaderFont="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_call_name"
+            android:layout_centerHorizontal="true">
+
+            <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+                android:id="@+id/view_call_number"
+                style="@style/VOWIFI.Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/call_caller_details_color"
+                android:transitionName="@string/transition_call_number"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/view_call_hung_up_shadows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/shadow_connection"/>
+
+        <ImageView
+            android:id="@+id/view_call_hung_up_dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/dots_connection"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/view_call_hung_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:padding="15dp"
+        android:src="@drawable/ic_answer_call"
+        android:transitionName="@string/transition_call_hung_up"/>
+
+
+</RelativeLayout>

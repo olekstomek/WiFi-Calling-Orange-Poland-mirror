@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCFFCC"
+    android:minHeight="64dp">
+
+    <ImageView
+        android:id="@+id/recspec_divider_icon"
+        style="@style/VOWIFI.ImageDivider"
+        android:layout_width="150dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/divider1"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/recspec_divider_text"
+        style="@style/VOWIFI.Text.Header"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toStartOf="@id/recspec_divider_icon"
+        android:text="@string/dbg_data1"
+        app:useHeaderFont="true"/>
+</RelativeLayout>

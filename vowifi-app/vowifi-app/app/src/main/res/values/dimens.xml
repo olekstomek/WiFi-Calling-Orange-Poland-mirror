@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_small_margin">8dp</dimen>
+    <dimen name="activity_vertical_small_margin">8dp</dimen>
+    <dimen name="key_text_size">25sp</dimen>
+    <dimen name="fast_scroll_overlay_text_size">100dp</dimen>
+    <dimen name="iv_state_bottom_margin">5dp</dimen>
+    <dimen name="dot_size">8dp</dimen>
+    <dimen name="dot_margin">5dp</dimen>
+    <dimen name="txt_margin_activation">16dp</dimen>
+    <dimen name="btn_margin_bottom">85dp</dimen>
+    <dimen name="main_margin_activation">16dp</dimen>
+    <dimen name="iv_logo_size">120dp</dimen>
+    <dimen name="text_view_margin_top">30dp</dimen>
+    <dimen name="margin_activation_init">16dp</dimen>
+    <dimen name="tv_title_text_size">20sp</dimen>
+    <dimen name="notification_top_bottom_margin">8dp</dimen>
+    <dimen name="image_button_size">32dp</dimen>
+    <dimen name="activation_top_margin">30dp</dimen>
+    <dimen name="progress_bar_size">100dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="iv_permission_logo">100dp</dimen>
+    <dimen name="iv_elevation">8dp</dimen>
+    <dimen name="card_view_size">180dp</dimen>
+</resources>

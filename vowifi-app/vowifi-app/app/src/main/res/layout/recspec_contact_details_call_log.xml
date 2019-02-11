@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:background="@color/bgDefault"
+    android:minHeight="64dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+            android:id="@+id/recspec_contact_details_call_log_duration"
+            style="@style/VOWIFI.Text"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:gravity="end"
+            android:text="@string/dbg_data1"/>
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+            android:id="@+id/recspec_contact_details_call_log_kind"
+            style="@style/VOWIFI.Text"
+            android:layout_width="wrap_content"
+            android:layout_toStartOf="@id/recspec_contact_details_call_log_duration"
+            android:gravity="start"
+            android:text="@string/dbg_data1"/>
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+            android:id="@+id/recspec_contact_details_call_log_date"
+            style="@style/VOWIFI.Text.Bold"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/recspec_contact_details_call_log_kind"
+            android:gravity="start"
+            android:text="@string/dbg_data1"/>
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+            android:id="@+id/recspec_contact_details_call_log_number"
+            style="@style/VOWIFI.Text.Light"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/recspec_contact_details_call_log_date"
+            android:gravity="start"
+            android:text="@string/dbg_data1"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/inc_separator"/>
+</LinearLayout>

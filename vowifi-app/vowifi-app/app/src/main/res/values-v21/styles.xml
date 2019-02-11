@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <!--<item name="android:windowSharedElementEnterTransition">@transition/contact_details</item>-->
+        <!--<item name="android:windowSharedElementExitTransition">@transition/contact_details</item>-->
+
+    </style>
+
+    <style name="VOWIFI.KeyboardFab">
+        <item name="android:elevation">3dp</item>
+        <item name="elevation">3dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">top|center</item>
+        <item name="android:src">@drawable/ic_dialer_call</item>
+    </style>
+</resources>

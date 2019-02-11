@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pl.orangelabs.wificalling.ctrl.MOFAB
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <pl.orangelabs.wificalling.util.flavoured.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/VOWIFI.FAB"
+        android:src="@drawable/ic_dialer"/>
+
+    <!-- it has to be invisible, not gone; because we need the dimensions calculated right at the start of showing anim -->
+    <FrameLayout
+        android:id="@+id/mofab_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:alpha="0"
+        android:duplicateParentState="false"
+        android:visibility="invisible">
+
+        <include
+            android:id="@+id/mofab_keyboard"
+            layout="@layout/ctrl_keyboard"/>
+    </FrameLayout>
+</pl.orangelabs.wificalling.ctrl.MOFAB>

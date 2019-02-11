@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="moTabBackgroundColor" format="reference"/>
+        <attr name="moTabIndicatorColor" format="color"/>
+        <attr name="moTabSeparatorColor" format="color"/>
+        <attr name="moTabUnderlineColor" format="color"/>
+        <attr name="moTabTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="OLPKeyboardKey">
+        <attr name="kkMainText" format="string"/>
+        <attr name="kkAdditionalText" format="string"/>
+        <attr name="kkHandleLongpress" format="boolean"/>
+        <attr name="kkColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="OLPKeyboardRow">
+        <attr name="keyRowVisibleInHardwareKeyboardMode" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FastScrollRecyclerView">
+        <attr name="fastScrollThumbColor" format="reference|color"/>
+        <attr name="fastScrollTrackColor" format="reference|color"/>
+        <attr name="fastScrollPopupBgColor" format="reference|color"/>
+        <attr name="fastScrollPopupTextColor" format="reference|color"/>
+        <attr name="fastScrollPopupTextSize" format="reference|dimension"/>
+        <attr name="fastScrollPopupBackgroundSize" format="reference|dimension"/>
+        <attr name="fastScrollAutoHide" format="reference|boolean"/>
+        <attr name="fastScrollAutoHideDelay" format="reference|integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomFontTextView">
+        <attr name="useHeaderFont" format="boolean"/>
+    </declare-styleable>
+</resources>

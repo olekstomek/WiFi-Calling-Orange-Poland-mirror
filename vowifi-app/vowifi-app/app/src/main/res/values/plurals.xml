@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="call_log">
+        <item quantity="zero">Łącznie %1$s połączeń</item>
+        <item quantity="one">Łącznie %1$s połączenie</item>
+        <item quantity="few">Łącznie %1$s połączenia</item>
+        <item quantity="many">Łącznie %1$s połączeń</item>
+        <item quantity="other">Łącznie %1$s połączeń</item>
+    </plurals>
+    <plurals name="notificiation_many_calls_missed_text">
+        <item quantity="zero">%1$s nieodebranych połączeń</item>
+        <item quantity="one">%1$s nieodebrane połączenie</item>
+        <item quantity="few">%1$s nieodebrane połączenia</item>
+        <item quantity="many">%1$s nieodebranych połączeń</item>
+        <item quantity="other">%1$s nieodebranych połączeń</item>
+    </plurals>
+</resources>

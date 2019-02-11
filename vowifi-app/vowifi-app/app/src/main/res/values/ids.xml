@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="sliding_tab_strip_control_id"/>
+    <item type="id" name="settings_entry_switch_type_tag"/>
+</resources>

@@ -1,0 +1,2 @@
+moon::service charon stop
+carol::service charon stop

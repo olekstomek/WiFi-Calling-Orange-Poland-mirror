@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#Cd3c14</color>
+
+    <color name="call_caller_details_color">#ffffff</color>
+
+    <color name="keyboard_white_key_color">#E6E2E1</color>
+
+    <color name="separator">#CCCCCC</color>
+
+    <color name="half_transparent">#40000000</color>
+    <color name="framed_button_active">#000000</color>
+    <color name="framed_button_active_inverted">#FFFFFF</color>
+</resources>

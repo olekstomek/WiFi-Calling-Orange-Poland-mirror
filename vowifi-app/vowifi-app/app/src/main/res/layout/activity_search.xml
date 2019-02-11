@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/inc_toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.orangelabs.wificalling.ctrl.ParallaxRecyclerView
+            android:id="@+id/activity_search_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <include layout="@layout/misc_error_frame"/>
+
+        <include
+            android:id="@+id/mo_fab"
+            layout="@layout/ctrl_fab_sheet"/>
+    </FrameLayout>
+
+</LinearLayout>

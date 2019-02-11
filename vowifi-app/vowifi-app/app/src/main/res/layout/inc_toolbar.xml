@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    style="@style/VOWIFI.Toolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/appbar_elevation"
+    app:elevation="@dimen/appbar_elevation">
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/toolbar_title"
+        style="@style/VOWIFI.Text.Inverted"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_size_toolbar_title"
+        app:useHeaderFont="true"/>
+</android.support.v7.widget.Toolbar>

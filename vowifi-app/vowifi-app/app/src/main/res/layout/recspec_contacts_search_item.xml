@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:elevation="6dp"
+    android:minHeight="64dp"
+    android:orientation="horizontal"
+    app:elevation="6dp">
+
+    <ImageView
+        android:id="@+id/recspec_contacts_item_image_view"
+        android:layout_width="@dimen/list_item_icon_size"
+        android:layout_height="@dimen/list_item_icon_size"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_avatar_thumbnail"
+        android:transitionName="@string/animation_contact_details_photo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+            android:id="@+id/recspec_contacts_item_header"
+            style="@style/VOWIFI.Text"
+            android:text="@string/dbg_data1"/>
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+            android:id="@+id/recspec_contacts_item_number"
+            style="@style/VOWIFI.Text.Light"
+            android:layout_gravity="center"
+            android:text="@string/dbg_data1"/>
+    </LinearLayout>
+</LinearLayout>

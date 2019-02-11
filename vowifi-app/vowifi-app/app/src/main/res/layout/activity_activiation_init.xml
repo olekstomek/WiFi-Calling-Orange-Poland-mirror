@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgAccented"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/activity_init_splash_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splash_image"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        android:id="@+id/activity_init_title"
+        style="@style/VOWIFI.Text.AppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_init_splash_image"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:lineSpacingMultiplier="0.7"
+        android:text="@string/app_name"
+        app:useHeaderFont="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:src="@drawable/splash_logo"/>
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--style="@style/VOWIFI.Toolbar"/>-->
+
+
+    <RelativeLayout
+        android:id="@+id/activity_init_bottom_frame"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bgDefault"
+        android:elevation="6dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/activity_activation_btn_start"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/margin_activation_init"
+            android:layout_marginLeft="@dimen/margin_activation_init"
+            android:layout_marginRight="@dimen/margin_activation_init"
+            android:layout_marginTop="60dp"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+                    style="@style/VOWIFI.Text.Init"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_activation_init_main_text"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontButton
+            android:id="@+id/activity_activation_btn_start"
+            style="@style/VOWIFI.Button.Framed"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_activation_init"
+            android:text="@string/activity_activation_init_start_btn"
+
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/activity_init_app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:elevation="8dp"
+        android:src="@drawable/ic_app_logo"/>
+
+</RelativeLayout>

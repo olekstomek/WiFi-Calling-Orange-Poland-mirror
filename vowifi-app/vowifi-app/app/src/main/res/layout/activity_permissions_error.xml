@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/inc_toolbar"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontTextView
+        style="@style/VOWIFI.Text"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:text="@string/page_permissions_error_message"
+        android:layout_width="match_parent"/>
+
+    <pl.orangelabs.wificalling.ctrl.CustomFontButton
+        android:id="@+id/page_permissions_error_button"
+        style="@style/VOWIFI.Button.Framed"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:text="@string/misc_btn_try_again"/>
+</LinearLayout>

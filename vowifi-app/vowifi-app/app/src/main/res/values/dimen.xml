@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_default">14sp</dimen>
+    <dimen name="text_size_body">18sp</dimen>
+    <dimen name="text_size_header">18sp</dimen>
+    <dimen name="text_size_header_big">24sp</dimen>
+    <dimen name="text_size_app_title">48sp</dimen>
+    <dimen name="text_size_toolbar_title">20sp</dimen>
+
+    <dimen name="list_item_icon_size">36dp</dimen>
+    <dimen name="list_item_right_icon_size">22dp</dimen>
+
+    <dimen name="appbar_elevation">6dp</dimen>
+</resources>

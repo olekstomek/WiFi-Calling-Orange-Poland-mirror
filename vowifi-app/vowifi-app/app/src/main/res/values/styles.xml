@@ -1,0 +1,245 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.Full" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+
+    </style>
+
+    <style name="VOWIFI.ImageDivider">
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="AppTheme.Wallpaper" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+
+    <!--<style name="AppTheme.Wallpaper" parent="@android:style/Theme.Wallpaper.NoTitleBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--</style>-->
+
+    <style name="AppTheme.Transparent">
+        <item name="android:background">#33000000</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="VOWIFI">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="VOWIFI.Text">
+        <item name="android:textColor">@color/textNormal</item>
+        <item name="android:textSize">@dimen/text_size_default</item>
+    </style>
+
+    <style name="VOWIFI.Text.Big">
+        <item name="android:textColor">@color/textNormal</item>
+        <item name="android:textSize">@dimen/text_size_header</item>
+    </style>
+
+    <style name="VOWIFI.Text.Call">
+        <item name="android:textColor">@color/textInverted</item>
+        <item name="android:textSize">@dimen/text_size_default</item>
+    </style>
+
+    <style name="VOWIFI.Text.Custom">
+    </style>
+
+    <style name="VOWIFI.Text.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="VOWIFI.Text.Init">
+        <item name="android:textColor">@color/textNormal</item>
+        <item name="android:textSize">@dimen/text_size_body</item>
+    </style>
+    <style name="VOWIFI.Text.Permission">
+        <item name="android:textColor">@color/textNormal</item>
+        <item name="android:textSize">@dimen/text_size_default</item>
+    </style>
+    <style name="VOWIFI.Text.Permission.Invert">
+        <item name="android:textColor">@color/textInverted</item>
+        <item name="android:textSize">@dimen/text_size_default</item>
+    </style>
+
+    <style name="VOWIFI.Text.Accent">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="VOWIFI.Text.Light">
+        <item name="android:textColor">@color/textLight</item>
+    </style>
+
+    <style name="VOWIFI.Text.Header">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_header</item>
+    </style>
+
+    <style name="VOWIFI.Text.Header.Big">
+        <item name="android:textSize">@dimen/text_size_header_big</item>
+    </style>
+
+    <style name="VOWIFI.Text.Inverted">
+        <item name="android:textColor">@color/textInverted</item>
+    </style>
+
+    <style name="VOWIFI.Text.AppTitle">
+        <item name="android:textColor">@color/textInverted</item>
+        <item name="android:textSize">@dimen/text_size_app_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="VOWIFI.PagerStrip">
+        <item name="moTabBackgroundColor">@color/bgAccented</item>
+        <item name="moTabIndicatorColor">@color/bgInvertedAccented</item>
+        <item name="moTabUnderlineColor">@color/bgInvertedAccented</item>
+        <item name="moTabSeparatorColor">#FFFFFF</item>
+        <item name="moTabTextColor">#FFFFFF</item>
+    </style>
+
+    <style name="VOWIFI.Text.MainHeader" parent="VOWIFI.Text.Inverted">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="VOWIFI.Text.MainHeader.Bottom">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="VOWIFI.Text.Switch">
+        <item name="android:minHeight">60dp</item>
+    </style>
+
+    <style name="VOWIFI.Text.Inverted.Switch">
+        <item name="android:minHeight">60dp</item>
+    </style>
+
+    <!-- TODO normal button? -->
+    <style name="VOWIFI.Button"/>
+
+    <style name="VOWIFI.Button.Material">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">72dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">@color/textAccented</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+    <style name="VOWIFI.Button.Material.Inverted">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">72dp</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/bgInvertedAccented</item>
+        <item name="android:textColor">@color/textInverted</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="VOWIFI.Toolbar">
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/bgAccented</item>
+        <item name="titleTextColor">@color/textInverted</item>
+        <item name="theme">@style/Theme.AppCompat</item>
+        <item name="popupTheme">@style/Theme.AppCompat.Light</item>
+        <item name="contentInsetStart">@dimen/activity_horizontal_margin</item>
+        <item name="contentInsetStartWithNavigation">@dimen/activity_horizontal_margin</item>
+
+    </style>
+
+    <style name="VOWIFI.Keyboard">
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/bgDefault</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:elevation">8dp</item>
+        <item name="elevation">8dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="VOWIFI.KeyboardWhite">
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/bgDefault</item>
+        <item name="android:layout_gravity">bottom</item>
+
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="VOWIFI.KeyboardKey">
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="VOWIFI.KeyboardKeyWhite">
+        <item name="android:layout_weight">1</item>
+        <item name="kkColor">@color/keyboard_white_key_color</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="VOWIFI.KeyboardRow">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="VOWIFI.KeyboardFab">
+        <item name="elevation">0dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">top|center</item>
+        <item name="android:src">@drawable/ic_dialer_call</item>
+    </style>
+
+    <style name="VOWIFI.KeyMain">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textNormal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="VOWIFI.KeyAdditional">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textNormal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="VOWIFI.FAB">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">right|bottom</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_vertical_margin</item>
+        <item name="rippleColor">#333333</item>
+    </style>
+
+    <style name="VOWIFI.Image"></style>
+    
+</resources>

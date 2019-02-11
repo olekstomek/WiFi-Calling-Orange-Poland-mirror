@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/cookie/.android/build-cache/6f3b1b70d341ca89920ea937e3e86fda94504434/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="/home/cookie/new/strongswan/src/frontends/android/app/build/intermediates/pre-dexed/debug/classes_ab96e400276012d21ff884306ad0dcdc92dfce90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cookie/.android/build-cache/35e678d9fcd281994fafee67de67a0a98fb4897f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/home/cookie/new/strongswan/src/frontends/android/app/build/intermediates/pre-dexed/debug/classes_72664371de80512c07e6397313a1ebd355b1b2ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/cookie/sip/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/home/cookie/new/strongswan/src/frontends/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.3.0_92b941ef843a23d6b283973304ee6ba6d0c3ae6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cookie/.android/build-cache/e61265deefa6cb8f80d7c6f2dab4f57341059339/output/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/home/cookie/new/strongswan/src/frontends/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.3.0_5bbe442f29a9f34213c2ad3d6eaa589dbd9f2c94.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cookie/.android/build-cache/e61265deefa6cb8f80d7c6f2dab4f57341059339/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/home/cookie/new/strongswan/src/frontends/android/app/build/intermediates/pre-dexed/debug/classes_3851af2661f62d5257dbff7cf90ccfcc1d87f10c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cookie/.android/build-cache/51522bffce1db15b15762e93cac35d6f8b4c35f3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/home/cookie/new/strongswan/src/frontends/android/app/build/intermediates/pre-dexed/debug/classes_6a2be521fa8ba396959e2f74c474941644623f40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cookie/.android/build-cache/c61dd5e5138c3ebe722972a4ae51720835444ad4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/home/cookie/new/strongswan/src/frontends/android/app/build/intermediates/pre-dexed/debug/classes_bebee42f0e456ddda6f0cf86d216142225f936b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/cookie/.android/build-cache/e8ed484e2c1fc6cc386fd2cc943aec4982db028a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/home/cookie/new/strongswan/src/frontends/android/app/build/intermediates/pre-dexed/debug/classes_d9b7a3b65e2293477eb930b6d686f98f34b0e946.jar" />
+    </item>
+
+</items>

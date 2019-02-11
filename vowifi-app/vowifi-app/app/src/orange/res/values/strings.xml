@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WiFi Calling</string>
+    <string name="dialog_msg_wrong_operator">Aby skorzystać z WiFi Calling w Orange, włóż kartę SIM tego operatora.</string>
+</resources>

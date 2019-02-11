@@ -1,0 +1,169 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name_colored_part">Calling</string>
+    <string name="dbg_data1"></string>
+    <string name="dbg_data2"></string>
+    <string name="dbg_data3"></string>
+    <string name="view_contact_details_make_call">Połącz</string>
+    <string name="view_contact_details_sms">SMS</string>
+    <string name="view_contact_details_edit">Edytuj</string>
+
+    <string name="ussd_config_description">Ussd config description</string>
+
+
+    <string name="animation_contact_details_name">@string/transition_call_name</string>
+    <string name="animation_contact_details_photo">@string/transition_call_photo</string>
+
+    <string name="transition_call_photo">call_photo</string>
+    <string name="transition_call_name">call_name</string>
+    <string name="transition_call_number">call_number</string>
+    <string name="transition_call_country">call_country</string>
+    <string name="transition_call_hung_up">call_hungup</string>
+
+    <string name="call_log_type_incoming">Przychodzące</string>
+    <string name="call_log_type_missed">Nieodebrane</string>
+    <string name="call_log_type_outgoing">Wychodzące</string>
+    <string name="call_log_type_blocked">Zablokowane</string>
+    <string name="call_log_type_voice_mail">Poczta głosowa</string>
+    <string name="call_log_type_rejected">Odrzucone</string>
+    <string name="default_toolbar_title">WiFi Calling</string>
+    <string name="default_toolbar_title_colored_part">Calling</string>
+    <string name="activity_init_start_btn">Połącz</string>
+    <string name="activity_settings_change_password">Zmień hasło</string>
+    <string name="activity_activation_init_start_btn">Włącz usługę</string>
+    <string name="activity_about_version">wersja %1$s</string>
+    <string name="view_contact_details_menu_edit">Edytuj</string>
+    <string name="main_header_connections">Połączenia</string>
+    <string name="main_header_connections_sub">Ostatnie</string>
+    <string name="main_header_contacts">Kontakty</string>
+    <string name="main_header_contacts_sub">Moje</string>
+
+    <string name="activity_settings_sorting_mode_on">Sortowanie listy kontaktów według imienia</string>
+    <string name="activity_settings_sorting_mode_off">Sortowanie listy kontaktów według nazwiska</string>
+    <string name="activity_settings_display_mode_on">Wyświetlaj nazwy kontaktów według imienia</string>
+    <string name="activity_settings_display_mode_off">Wyświetlaj nazwy kontaktów według nazwiska</string>
+
+    <string name="call_log_divider_approx_today">Dzisiaj</string>
+    <string name="call_log_divider_approx_yesterday">Wczoraj</string>
+    <string name="call_log_divider_approx_week">7 dni</string>
+    <string name="call_log_divider_approx_month">30 dni</string>
+    <string name="call_log_divider_approx_year">365 dni</string>
+    <string name="call_log_divider_approx_forever">Dawniej</string>
+
+    <string name="call_log_entry_type_incoming">przychodzące</string>
+    <string name="call_log_entry_type_outgoing">wychodzące</string>
+    <string name="call_log_entry_type_missed">nieodebrane</string>
+
+    <string name="call_log_entry_type_other">inne</string>
+    <string name="call_log_entry_phone_field_formatting">%1$s %2$s</string>
+    <string name="call_log_entry_time_field_formatting">%1$s %2$s</string>
+
+    <string name="call_log_entry_anonymouse_name">Numer prywatny</string>
+    <string name="call_log_entry_anonymouse_number">Brak numeru</string>
+    <string name="call_log_entry_anonymouse_kind">Nieznany</string>
+    <string name="volteState">VoLte state: %1$s, WiFiCalling state: %2$s</string>
+    <string name="misc_btn_try_again">spróbuj ponownie</string>
+    <string name="page_contacts_error_permissions">Aplikacja nie ma dostępu do kontaktów</string>
+    <string name="page_contacts_error_empty">Nie znaleziono żadnych kontaktów</string>
+    <string name="page_connections_error_empty">Brak połączeń na liście</string>
+    <string name="page_permissions_error_message">Do poprawnego działania aplikacji wymagane jest udzielenie zgód. Jeśli wybrałeś \"ODMÓW\" podczas pierwszego uruchomienia, to nic już nie poradzimy.</string>
+    <string name="accept_terms_title">Regulamin aplikacji</string>
+    <string name="turn_on_wifi">Włącz WiFi</string>
+    <string name="check_wifi">Sprawdź swoje połaczenie WiFi, brak połączenia z siecią Internet</string>
+    <string name="connect_to_wifi_message">Włącz WiFi w telefonie aby połączyć się z usługą WiFi Calling</string>
+    <string name="accept">Akceptuj</string>
+    <string name="cancel">Anuluj</string>
+    <string name="skip">Pomiń</string>
+    <string name="settings">Ustawienia</string>
+    <string name="connecting">Łączenie…</string>
+
+    <string name="notification_call_missed">Nieodebrane połączenie</string>
+    <string name="notification_many_calls_missed_title">Nieodebrane połączenia</string>
+    <string name="notification_many_calls_missed_text">%1$s nieodebranych połączeń</string>
+    <string name="notification_missed_action_call_back">Oddzwoń</string>
+    <string name="notification_call_answer">Odbierz</string>
+    <string name="notification_call_reject">Odrzuć</string>
+    <string name="connection_error">Błąd połączenia</string>
+    <string name="dialog_error_message">Nie można zestawić bezpiecznego połączenia sprawdź dostęp do Internetu lub spróbuj później</string> <!--TODO replace with better string -->
+    <string name="dialog_reset_button">Zresetuj ustawienia</string>
+    <string name="notification_call_ongoing">Trwa połączenie</string>
+    <string name="notification_call_incoming">Połączenie przychodzące</string>
+    <string name="dialog_pick_number_title">Wybierz numer:</string>
+    <string name="about_tos_button">Regulamin</string>
+    <string name="about_licenses_button">Licencje</string>
+    <string name="accept_terms_informative_title">Regulamin</string>
+    <string name="dialog_licenses_title">Licencje</string>
+    <string name="nt_disabled_state">Usługa rozłączona</string>
+    <string name="nt_no_wifi">WiFi wyłączone</string>
+    <string name="nt_no_internet_connection">WiFi bez sieci internet</string>
+    <string name="nt_active_state">usługa włączona</string>
+    <string name="nt_connecting">łączenie…</string>
+    <string name="nt_disconnecting">rozłączanie…</string>
+    <string name="nt_error_connecting">błąd połączenia</string>
+    <string name="nt_weak_wifi">@string/dialog_weak_signal</string>
+    <string name="nt_permission_canceled">anulowano zgodę VPN</string>
+    <string name="wifi_waiting">Oczekiwanie na sieć WiFi</string>
+
+    <string name="call_state_incoming">połączenie</string>
+    <string name="call_state_early">wybieranie</string>
+    <string name="call_state_connecting">połączono</string>
+    <string name="call_state_disconnect">rozłączono</string>
+
+
+    <string name="txt_activation_sms_waiting">Trwa weryfikacja. Oczekuj na SMS.
+        Aplikacja będzie działać w tle i poinformuje Cię o rezultacie w powiadomieniu.
+    </string>
+    <string name="txt_activation_sms_waiting_2">Może to potrwać nawet do 10 minut. Prosimy o cierpliwość.
+    </string>
+    <string name="txt_activation_init_main_text">Po włączeniu usługi oczekuj na SMS z informacjami potrzebnymi do pomyślnego
+    połączenia z aplikacją WiFi Calling.</string>
+
+    <string name="btn_text_next">Dalej</string>
+    <string name="btn_text_end">Zakończ</string>
+    <string name="txt_activated">Usługa WiFi Calling została aktywowana na Twoim numerze. Kliknij \"połącz\" by z niej skorzystać.</string>
+    <string name="dialog_title_wrong_operator">Niewłaściwy operator usługi</string>
+    <string name="dialog_msg_wrong_operator">Aby skorzystać z WiFi Calling w NJU, włóż kartę SIM tego operatora.</string>
+    <string name="dialog_msg_sim_changed">Zmieniono kartę SIM, Czy chcesz dla niej aktywować usługę WiFi Calling</string>
+    <string name="dialog_msg_restart_phone">Błąd połączenia.\nZrestartuj telefon, może to pomóć w rozwiązaniu problemu</string>
+    <string name="dialog_weak_signal">Słaby sygnał WiFi</string>
+    <string name="error_title">Uwaga</string>
+    <string name="menu_disconnect">Rozłącz</string>
+    <string name="menu_service_info">O usłudze</string>
+    <string name="menu_about">O aplikacji</string>
+    <string name="menu_settings">Ustawienia</string>
+    <string name="msg_connection_error">Błąd połączenia, Spróbuj jeszcze raz</string>
+    <string name="ongoing_call">trwa rozmowa</string>
+    <string name="disconnecting">Rozłączanie…</string>
+    <string name="tv_permission_explanation">Aby aplikacja mogła działać poprawnie potrzebujemy kilku zgód, o które zostaniesz poproszony na kolejnych ekranach. Robisz to tylko raz.</string>
+    <string name="tv_permission_explanation2">OK, jasna sprawa.</string>
+    <string name="tv_permission_begin">Zaczynamy</string>
+
+    <string name="permission_name_audio">Nagrywanie dźwięku</string>
+    <string name="permission_name_audio_desc">Za pomocą aplikacji będziesz prowadzić rozmowy telefoniczne. Niezbędne do tego jest skorzystanie z mikrofonu. Rozmowy nie będą nagrywane przez aplikację.</string>
+    <string name="permission_name_calling">Połączenie telefoniczne</string>
+    <string name="permission_name_calling_desc">Aplikacja służy do dzwonienia. Ta zgoda potrzebna jest nam, aby nawiązywać i odbierać połączenia telefoniczne.</string>
+    <string name="permission_name_sms">Wyświetlanie SMSów</string>
+    <string name="permission_name_sms_desc">Korzystamy z SMSa weryfikacyjnego podczas zakładania konta. Dzięki tej zgodzie aplikacja sama przeczyta treść tajnego kodu.</string>
+    <string name="permission_name_drive">Dostęp do zdjęć</string>
+    <string name="permission_name_drive_desc">Gdy zadzwoni ktoś z Twoich znajomych, będziemy mogli wyświetlić jego awatar.</string>
+    <string name="permission_name_turn_on">Włącz usługę</string>
+    <string name="permission_name_turn_on_desc">Włącz usługę WiFi Calling w Orange, aby móc z niej korzystać za pośrednictwem tej aplikacji.</string>
+    <string name="permission_name_connect">Połącz się z usługą</string>
+    <string name="permission_name_connect_desc">Aby Twoje połączenia były kierowane przez WiFi Calling, aplikacja musi być z nią połączona.</string>
+    <string name="permission_name_t_c">Regulamin</string>
+    <string name="permission_name_t_c_desc">Tutaj znajdziesz wszystkie zasady korzystania z aplikacji WiFi Calling. Akceptacja Regulaminu jest niezbędna, aby skorzystać z aplikacji.</string>
+    <string name="permission_name_vpn">Połączenie VPN</string>
+    <string name="permission_name_vpn_desc">W celu zapewnienia bezpieczeństwa aplikacja korzysta z bezpiecznego połączenia VPN z siecią Orange. Jest to konieczne do jej poprawnego działania. Aktywne połączenie VPN jest sygnalizowane ikonką kluczyka u góry ekranu.</string>
+    <string name="permission_name_contacts">Kontakty</string>
+    <string name="permission_name_contacts_desc">Z aplikacji możesz dzwonić do wszystkich osób z listy kontaktów w książce telefonicznej. Nie musisz tworzyć oddzielnej książki, aplikacja odczytuje ją z Twojego telefonu.</string>
+    <string name="activity_about">Aplikacja WiFi Calling umożliwia korzystanie z usługi WiFi Calling od Orange i jest dostępna dla telefonów z systemem Android w wersji 5.0 oraz wyższej.</string>
+    <string name="tutorial_details">Szczegóły</string>
+    <string name="settings_wifi_url">http://www.orange.pl/wificalling</string>
+
+    <string name="activity_settings_change_pass_title">Zmiana hasła</string>
+    <string name="activity_settings_change_pass_info" tools:ignore="Typos">Po wciśnięciu tego przycisku zostaniesz wylogowany. A następnie SMSem otrzymasz nowe hasło do aplikacji.</string>
+    <string name="dialog_wifi_settings_change">Aplikacja chce zmienić twoje ustawienia:</string>
+    <string name="dialog_wifi_wifi_connection">Połączenie Wi-Fi</string>
+    <string name="label_logs">LOG</string>
+
+
+</resources>

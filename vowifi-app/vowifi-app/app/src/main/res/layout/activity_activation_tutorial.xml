@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_activation_tutorial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.orangelabs.wificalling.view.activation_client.ActivityActivationTutorial"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+    android:id="@+id/view_pager_pages"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:elevation="0dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgAccented"
+        android:layout_gravity="end"
+        android:elevation="10dp">
+        <LinearLayout
+            android:id="@+id/ll_dots_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+        </LinearLayout>
+        <pl.orangelabs.wificalling.ctrl.CustomFontButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_text_next"
+            android:textColor="@color/textInvertedAccentedSpan"
+            android:layout_alignParentEnd="true"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <pl.orangelabs.wificalling.ctrl.CustomFontButton
+            android:id="@+id/btn_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_text_end"
+            android:visibility="gone"
+            android:textColor="@color/textInvertedAccentedSpan"
+            android:layout_alignParentEnd="true"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+    </RelativeLayout>
+</LinearLayout>
